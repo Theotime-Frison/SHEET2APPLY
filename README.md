@@ -81,11 +81,11 @@ Make a copy of each template to your own Google Drive (**File > Make a copy**):
   - Cover Letter: `{{lettre}}` (body of the letter)
 - **AI Prompt**:
   Keep structural placeholders required by Sheet2Apply, but feel free to tweak section `1. Cover letter > Structure` or add details under `Personal Information` to match your background.
-- **Google Sheet**:
-  Do not modify header names, sheet names, or the ID formula (`=ROW()-1`).
   Available placeholders for job data:
   - `{{description}}`: Full job offer description
   - `{{langue}}`: Language choice for the AI output
+- **Google Sheet**:
+  Do not modify header names, sheet names, or the ID formula (`=ROW()-1`).
 
 ---
 
@@ -108,6 +108,6 @@ Make a copy of each template to your own Google Drive (**File > Make a copy**):
    - Click **Allow** (*Autoriser*).
 4. Enter your API keys when prompted (they will be securely saved for future use).
 5. Enter the **Job ID** you wish to generate documents for.
-6. The script will automatically create customized Cover Letters and Resumes inside your designated Google Drive folder.
+6. The script will automatically create customized Cover Letters and Resumes inside your designated Google Drive folder. The link of the folder is stored on the cell "Title" of the specific job offer.
 
 Good luck with your applications! 🍀

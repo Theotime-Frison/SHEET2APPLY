@@ -33,7 +33,7 @@ function onEdit(e) {
       if (col.status > 0) {
         const celluleStatus = feuille.getRange(activeRow, col.status);
         if (celluleStatus.getValue() === "") {
-          celluleStatus.setValue("A Postuler");
+          celluleStatus.setValue("To Apply");
         }
       }
       if (col.entretiens > 0) {
@@ -52,7 +52,7 @@ function onEdit(e) {
   }
 
   // --- CAS 2 : PASSAGE EN "Envoyée" (Inchangé) ---
-  if (col.status > 0 && activeCol === col.status && activeValue === "Candidaté") {
+  if (col.status > 0 && activeCol === col.status && activeValue === "Applied") {
     if (col.application_date > 0) {
       feuille.getRange(activeRow, col.application_date).setValue(new Date());
     }

@@ -45,7 +45,7 @@ function onEdit(e) {
       if (col.langue > 0) {
         const celluleLangue = feuille.getRange(activeRow, col.langue);
         if (celluleLangue.getValue() === "") {
-          celluleLangue.setValue("Français");
+          celluleLangue.setValue("French");
         }
       }
     }

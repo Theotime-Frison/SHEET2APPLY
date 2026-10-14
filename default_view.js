@@ -34,7 +34,7 @@ function default_view() {
   .filter(String);
 
   const hiddenValues = allValues.filter(value =>
-    value !== "To Apply" && value !== "Applied"
+    value !== "To Apply" && value !== "Applied" && value !== "Interview"
   );
 
   const criteria = SpreadsheetApp.newFilterCriteria()
